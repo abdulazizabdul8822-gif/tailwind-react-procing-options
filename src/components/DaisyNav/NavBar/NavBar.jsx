@@ -34,7 +34,7 @@ const NavBar = () => {
     const [open, setOpen] = useState(false);
     const links = navData.map(route => <Link key={route.id} route={route}></Link>)
     return (
-        <nav className=' flex justify-between mx-10'>
+        <nav className=' flex justify-between mx-10 mr-4'>
             <span className=' flex' onClick={() => setOpen(!open)}>
                 { open ? <X className=' md:hidden'></X> :
                  <Menu className=' md:hidden'></Menu> }
